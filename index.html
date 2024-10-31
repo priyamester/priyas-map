@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="priyas map">EDIT map title</div>
+  <div id="map-title">EDIT priyas-map</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -32,13 +32,6 @@
     scrollWheelZoom: false
   });
 
-    center: [41.557, -72.657], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
- 
-    center: [41.316, -72.922], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
- 
-
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
     'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -50,6 +43,16 @@
   /* Display a point marker with pop-up text */
   L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
   .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+ /* Display a point marker with pop-up text */
+  L.marker([41.75, -72.69]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+     /* Display a point marker with pop-up text */
+  L.marker([41.32, -72.92]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+    /* Display a point marker with pop-up text */
+  L.marker([41.56, -72.66]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+
 
   </script>
 </body>
